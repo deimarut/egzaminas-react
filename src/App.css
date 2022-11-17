@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.App img {
+  height: 100px;
+}
+
+.link {
+  padding: 20px;
+  text-decoration-color: grey;
+  color: blue;
+}
+
+.link:hover {
+  background-color: lightpink;
+}
