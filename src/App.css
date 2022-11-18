@@ -9,8 +9,7 @@
 
 .link {
   padding: 20px;
-  text-decoration-color: grey;
-  color: blue;
+  text-decoration: none;
 }
 
 .link:hover {

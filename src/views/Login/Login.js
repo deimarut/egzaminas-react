@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../../utils/constants";
 
 export const Login = () => {
@@ -15,13 +16,18 @@ export const Login = () => {
           })
         });
       }
+    const navigate = useNavigate();
+
+    const navigateHome = () => {
+        navigate('/home');
+    };
 
     return (
         <div>
             <form onSubmit={handleLogin}>
                 <input type="email" placeholder='Email' />
                 <input type="password" placeholder='Password'/>
-                <button>Login</button>
+              <button onClick={navigateHome}>Login</button>
             </form>
       </div>
     )
