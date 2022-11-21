@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .App img {
@@ -9,8 +9,7 @@
 
 .link {
   padding: 20px;
-  text-decoration-color: grey;
-  color: blue;
+  text-decoration: none;
 }
 
 .link:hover {

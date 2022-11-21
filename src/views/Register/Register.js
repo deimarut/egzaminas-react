@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { BASE_URL } from "../../utils/constants";
+import "./Register.css";
 
 const handleLogin = (e) => {
     e.preventDefault();
@@ -17,15 +18,18 @@ const handleLogin = (e) => {
 
 export const Register = () => {
     return (
-        
         <div>
-            <Link to="/">Go back to login page</Link>
-         
-         <form onSubmit={handleLogin}>
-             <input type="email" placeholder='Email' />
-             <input type="password" placeholder='Password'/>
-             <button>Login</button>
-         </form>
-   </div>
+            <form onSubmit={handleLogin}>
+                <input type="email" placeholder='Email' />
+                <input type="password" placeholder='Password'/>
+                <button>
+                  <Link className="button" to="/">Register</Link>
+                </button>
+            </form>
+
+              <button>
+                <Link className="button" to="/">Go back to login page</Link>
+              </button>
+        </div>
     )
 }
